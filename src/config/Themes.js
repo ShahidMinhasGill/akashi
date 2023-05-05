@@ -1,6 +1,7 @@
 export const lightTheme = {
   text: '#333333',
-  body: 'linear-gradient(180deg, #CC6832 0%, rgba(204, 104, 50, 0.15) 100%)'
+  // body: '1D2A32'
+  body: 'rgba(204, 104, 50, 0.15)',
 };
 
 export const darkTheme = {

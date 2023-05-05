@@ -2,6 +2,7 @@ import React from "react";
 import dollar from '../../assets/icons/dollar.svg'
 import burn from '../../assets/icons/burn.svg'
 import supply from '../../assets/icons/supply.svg'
+import Akashi from '../../assets/images/Akashi.png'
 import PriceChart from "./components/PriceChart";
 
 export default function Home() {
@@ -9,6 +10,9 @@ export default function Home() {
     <div className="home">
 
       <div className="container">
+      <div className="col-12 .d-none d-md-none .d-sm-block  d-flex justify-content-center justify-content-center">
+  <img src={Akashi} alt="" />
+</div>
         <div className="row akshihome ">
           <div className="col-lg-5  col-12">
             <div className=" App">

@@ -94,7 +94,10 @@
     font-size: 14px;
     font-weight: bold;
   }
-  
+  .center {
+    display: inline-block;
+    /* Add any other styles specific to your image */
+  }
 }
 @media (max-width: 1024px) {
   .home {
@@ -118,10 +121,8 @@
 @media (max-width: 612px) {
 .home {
   .recharts-wrapper {
-    margin: 0 auto !important;
- 
-    
-  }
+    max-height: 280px;
+}
   .recharts-surface {
     width: 346px !important;
     height: 271px;
