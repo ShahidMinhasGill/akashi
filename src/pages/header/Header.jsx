@@ -5,6 +5,7 @@ import logo from '../../assets/images/logo.png';
 import logo2 from '../../assets/images/logo2.png';
 import mdi_walletbifold from '../../assets/icons/mdi_wallet-bifold.svg';
 import materialsymbols from '../../assets/icons/material-symbols_settings-night-sight.svg';
+import darkmod from '../../assets/icons/darkmod.svg';
 import { GlobalStyles } from '../../config/GlobalStyles';
 
 
@@ -23,8 +24,8 @@ console.log('toggleTheme',toggleTheme);
   return (
     <header className="header">
       <Navbar expand="lg">
-        <Navbar.Brand href="/" className="icon d-none d-sm-none d-md-block"><img src={logo} alt="logo"/></Navbar.Brand>
-        <Navbar.Brand href="/" className="icon .d-none d-md-none .d-sm-block"><img src={logo2} alt="logo"/></Navbar.Brand>
+        <Navbar.Brand  href="/" className="icon d-none d-sm-none d-md-block"><img src={logo} alt="logo"/></Navbar.Brand>
+        <Navbar.Brand href="/" className="icon smallscreenlogo .d-none d-md-none .d-sm-block"><img src={logo2} alt="logo"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto mr-auto">
@@ -35,7 +36,8 @@ console.log('toggleTheme',toggleTheme);
             <NavLink to="/blog" className="link" activeClassName="link active">Farm</NavLink>
           </Nav>
           <Nav className="ms-auto dir">
-          <NavLink to="/blog" className="link" activeClassName="link active"><img src={materialsymbols} alt="" /> <span className='akashismal'>AKASHI: 0</span></NavLink>
+          <NavLink onClick={() => toggleTheme()}  className="link .d-none d-md-none .d-sm-block" activeClassName="link active "><img src={materialsymbols} alt="" /> <span className='akashismal'>AKASHI: 0</span></NavLink>
+          <NavLink onClick={() => toggleTheme()}  className="link d-none d-sm-none d-md-block" activeClassName="link active "><img src={darkmod} alt="" /> <span className='akashismal'>AKASHI: 0</span></NavLink>
            {/* <div className="nabtns"> */}
            <select className="select" defaultValue={selected} onChange={handleChange}>
               {languages.map((language, index) => (
@@ -45,14 +47,7 @@ console.log('toggleTheme',toggleTheme);
             <button ><img src={mdi_walletbifold} alt="" /> Connect</button>
      
            {/* </div> */}
-                <Form className='m-2'>
-                  <Form.Check // prettier-ignore
-                    type="switch"
-                    id="custom-switch"
-                    onClick={toggleTheme}
-                  />
-
-                </Form>
+              
           </Nav>
                 
         </Navbar.Collapse>

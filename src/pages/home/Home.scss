@@ -1,6 +1,7 @@
 
 .home{
   overflow: hidden;
+  
   .box{
     // display: flex;
     // justify-content: space-around;
@@ -120,17 +121,34 @@
 }
 @media (max-width: 612px) {
 .home {
+  h6{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+  }
+  span{
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+  }
   .recharts-wrapper {
     max-height: 280px;
 }
 .small-logo{
-  height: 2rem;
+  height: 40px;
 }
   .recharts-surface {
     width: 346px !important;
     height: 271px;
 }
   .box{
+    height: 200px;
+    margin-top: 2rem !important;
+
     .inner-col{
       margin-top: 1rem !important;
       flex-direction: column;
@@ -149,19 +167,36 @@
 }
 @media (max-width: 425px) {
 .home {
+  h6{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+  }
+  span{
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+  }
   .buttons {
     button {
       margin-left: 0px;
       margin-top: 2rem;
+      width: 96px;
+      height: 40px;
      }
   }
-  .recharts-surface {
-    width: 300px !important;
-}
+//   .recharts-surface {
+//     width: 300px !important;
+// }
   .recharts-wrapper {
     max-height: 300px;
 }
   .box{
+    height: 200px;
     .inner-col2{
       margin-top: 3rem !important;
       flex-direction: column;
@@ -169,7 +204,7 @@
     }
   }
   .box2{
-    height: 300px;
+    height: 380px;
     .inner-col{
       margin-top: 1rem !important;
       flex-direction: column;
@@ -184,6 +219,12 @@
     button {
       margin-left: 0px;
       margin-top: 2rem;
+      img{
+        height: 19px;
+      }
+      .btn-text{
+        font-size: 12px;
+      }
      }
 
   }
@@ -201,7 +242,7 @@
     }
   }
   .box2{
-    height: 300px;
+    height: 380px;
     .inner-col{
       margin-top: 1rem !important;
       flex-direction: column;

@@ -2,6 +2,6 @@ body {
   background: linear-gradient(180deg, var(--body-color-1) 0%, var(--body-color-2) 100%);
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
+} */

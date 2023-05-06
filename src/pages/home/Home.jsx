@@ -11,10 +11,10 @@ export default function Home() {
 
       <div className="container">
       <div className="col-12 small-logo .d-none d-md-none .d-sm-block  d-flex justify-content-center justify-content-center">
-  <img src={Akashi} alt="" />
-</div>
+        <img src={Akashi} alt="" />
+      </div>
         <div className="row akshihome ">
-          <div className="col-lg-5  col-12">
+          <div className="col-lg-5   col-9">
             <div className=" App">
             <h2 className="text-center mt-3">Akashi Price</h2>
                <PriceChart />
@@ -33,13 +33,13 @@ export default function Home() {
             </div>
           </div>
             <div className="col-12 .d-none d-md-none .d-sm-block  d-flex justify-content-center buttons mt-2">
-              <button><img src={dollar} alt="" /> Buy</button>&#160;
-              <button><img src={burn} alt="" /> Burn</button>&#160;
-              <button><img src={supply} alt="" /> Supply</button>
+              <button><img src={dollar} alt="" /> <strong className="btn-text">Buy</strong></button>&#160;
+              <button><img src={burn} alt="" /> <strong className="btn-text">Burn</strong> </button>&#160;
+              <button><img src={supply} alt="" /> <strong className="btn-text">Supply</strong> </button>
             </div>
           </div>
           <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div>
-          <div className="col-lg-4   col-11" >
+          <div className="col-lg-4   col-9" >
             <div className="box mt-2" >
             <div className="row ">
               <div className="col-12 inner-col d-flex justify-content-around mt-5">

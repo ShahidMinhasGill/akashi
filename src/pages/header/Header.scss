@@ -8,15 +8,15 @@
       background-repeat: no-repeat;
       background-color: transparent;
 
-      .navbar-brand {
+      .icon {
           padding: 0;
           height: auto;
-
           img {
-              width: 133.2px;
-              height: 55px;
-              object-fit: contain;
-          }
+            width: 133.2px;
+            height: 55px;
+            object-fit: contain;
+        }
+           
       }
 
       .navbar-nav {
@@ -117,6 +117,9 @@
               align-items: center;
               .link {
                 padding: 6px;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
               }
           }
 
@@ -128,17 +131,14 @@
   .header {
       .navbar {
           // box-shadow: 0 4px 4px -5px grey;
-       
+          .icon img {
+            width: 61.2px !important;
+            height: 55px;
+            object-fit: contain;
+        
+       }
           .navbar-nav {
-            .navbar-brand {
-               a{
-                img {
-                    width: 61.2px !important;
-                    height: 55px;
-                    object-fit: contain;
-                }
-               }
-            }
+            
             .select {
                 width: 100px;
                 height: 35px;
