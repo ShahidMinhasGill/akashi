@@ -147,6 +147,38 @@
   }
 }
 }
+@media (max-width: 425px) {
+.home {
+  .buttons {
+    button {
+      margin-left: 0px;
+      margin-top: 2rem;
+     }
+
+  }
+  .recharts-surface {
+    width: 300px !important;
+}
+  .recharts-wrapper {
+    max-height: 300px;
+}
+  .box{
+    .inner-col2{
+      margin-top: 3rem !important;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .box2{
+    height: 300px;
+    .inner-col{
+      margin-top: 1rem !important;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+}
 @media (max-width: 375px) {
 .home {
   .buttons {
