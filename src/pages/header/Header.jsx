@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Form, FormGroup, Nav, Navbar } from "react-bootstrap";
 import logo from '../../assets/images/logo.png';
+import logo2 from '../../assets/images/logo2.png';
 import mdi_walletbifold from '../../assets/icons/mdi_wallet-bifold.svg';
 import materialsymbols from '../../assets/icons/material-symbols_settings-night-sight.svg';
 import { GlobalStyles } from '../../config/GlobalStyles';
@@ -22,7 +23,8 @@ console.log('toggleTheme',toggleTheme);
   return (
     <header className="header">
       <Navbar expand="lg">
-        <Navbar.Brand href="/" className="icon"><img src={logo} alt="logo"/></Navbar.Brand>
+        <Navbar.Brand href="/" className="icon d-none d-sm-none d-md-block"><img src={logo} alt="logo"/></Navbar.Brand>
+        <Navbar.Brand href="/" className="icon .d-none d-md-none .d-sm-block"><img src={logo2} alt="logo"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto mr-auto">

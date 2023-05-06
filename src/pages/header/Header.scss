@@ -128,7 +128,15 @@
   .header {
       .navbar {
           // box-shadow: 0 4px 4px -5px grey;
+          img {
+            width: 61.2px !important;
+            height: 55px;
+            object-fit: contain;
+        }
           .navbar-nav {
+            .navbar-brand {
+             
+            }
             .select {
                 width: 100px;
                 height: 35px;
