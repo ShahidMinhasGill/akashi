@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Nav, Navbar } from "react-bootstrap";
+import { Form, FormGroup, Nav, Navbar } from "react-bootstrap";
 import logo from '../../assets/images/logo.png';
 import mdi_walletbifold from '../../assets/icons/mdi_wallet-bifold.svg';
 import materialsymbols from '../../assets/icons/material-symbols_settings-night-sight.svg';
+import { GlobalStyles } from '../../config/GlobalStyles';
 
 
 
-const Header = () => {
-
+const Header = ( {toggleTheme}) => {
+console.log('toggleTheme',toggleTheme);
   const [selected, setSelected] = useState("Ethereum");
   const languages = ["Ethereum", "Bitcoin", "Litecoin", "Dogecoin"];
 
@@ -39,7 +40,17 @@ const Header = () => {
               ))}
             </select>
             <button ><img src={mdi_walletbifold} alt="" /> Connect</button>
+     
+                <Form className='m-2'>
+                  <Form.Check // prettier-ignore
+                    type="switch"
+                    id="custom-switch"
+                    onClick={toggleTheme}
+                  />
+
+                </Form>
           </Nav>
+                
         </Navbar.Collapse>
       </Navbar>
      

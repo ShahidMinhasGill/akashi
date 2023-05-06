@@ -169,7 +169,6 @@
           font-weight: normal;
           font-size: 14px;
           line-height: 22px;
-          color: #272c37;
 
           a img {
               object-fit: contain;
@@ -185,7 +184,6 @@
               justify-content: center;
 
               border-radius: 50%;
-              background-color: #ffffff;
           }
       }
 
@@ -233,92 +231,18 @@
 }
 
 @media (max-width: 992px) {
-  .background {
-      .footer-email {
-          h3 {
-              font-size: 20px;
-              line-height: 30px;
-          }
-          .es {
-              input {
-                  width: 65% !important;
-                  font-size: 12px;
-                  padding: 15px !important;
-              }
-
-              button {
-                  width: 35% !important;
-              }
-          }
-      }
-  }
-
-  .list {
-      li {
-          div {
-              margin-right: 5px !important;
-          }
-      }
-  }
-
-  .polygon {
-      img {
-          width: 140px !important;
-          height: 40px !important;
-      }
-  }
 }
 
 @media (max-width: 766px) {
-  .background{
-      .footer-email{
-          .es{
-              input{
-                  font-size: 12px !important;
-              }
-          }
-      }
-  }
+    .copyrgiht{
+        text-align: center;
+    }
 }
 @media (max-width: 575px) {
-  .background {
-      text-align: center;
-      .footer-email {
-          h3{
-              margin-top: -70px;
-          }
-          .es {
-              width: 70%;
-              height: 70px;
-              margin-left: 18%;
-              input {
-                  font-size: 12px !important;
-              }
-              button {
-                  font-size: 14px !important;
-              }
-          }
-      }
-      .footer-col {
-          display: flex;
-          justify-content: center;
-          .footer-image {
-              max-width: 300px;
-              max-height: 140px;
-              padding-top: 0 !important;
-          }
-      }
-  }
+.copyrgiht{
+    text-align: center;
+}
 }
 @media (max-width: 767px) {
-  .footer {
-      .background {
-          .footer-email {
-              h3 {
-                  font-size: 18px;
-                  line-height: 27px;
-              }
-          }
-      }
-  }
+
 }

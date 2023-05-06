@@ -1,3 +1,4 @@
+
 .home{
   overflow: hidden;
   .box{
@@ -6,7 +7,7 @@
     // align-items: center;
     width: 500px;
     height: 160px;
-    background: rgba(249, 232, 208, 0.5);
+    // background: rgba(249, 232, 208, 0.5);
     box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 23px;
   }
@@ -16,13 +17,14 @@
     // align-items: center;
     width: 500px;
     height: 200px;
-    background: rgba(249, 232, 208, 0.5);
+    // background: rgba(249, 232, 208, 0.5);
     box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 23px;
   }
   .buttons{
     button {
       width: 130px;
+      margin-left: 20px;
       height: 42px;
       filter: drop-shadow(0px 2px 0px rgba(29, 42, 50, 0.9));
       font-family: 'Hind';
@@ -42,4 +44,135 @@
       }
   }
   }
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    .linechart{
+       height:400;
+       width: 600px;
+    }
+  }
+  
+  .recharts-wrapper {
+    margin: 0 auto;
+    width: 400 !important;
+    height: 600 !important;
+  }
+  .recharts-surface {
+    height:400 !important;
+    width: 600px !important;
+    border-radius: 5px;
+  }
+  
+  
+  .recharts-cartesian-axis-tick-value {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .recharts-cartesian-axis-tick-line {
+    display: none;
+  }
+  
+  .recharts-tooltip-wrapper {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .recharts-default-legend {
+    margin-top: 10px;
+  }
+  
+  .recharts-legend-item-text {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .center {
+    display: inline-block;
+    /* Add any other styles specific to your image */
+  }
+}
+@media (max-width: 1024px) {
+  .home {
+    overflow: hidden;
+    .akshihome{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-direction: column-reverse;
+  
+    }
+    .box {
+      width: 100%;
+  }
+    .box2 {
+      width: 100%;
+  }
+  
+}
+}
+@media (max-width: 612px) {
+.home {
+  .recharts-wrapper {
+    max-height: 280px;
+}
+  .recharts-surface {
+    width: 346px !important;
+    height: 271px;
+}
+  .box{
+    .inner-col{
+      margin-top: 1rem !important;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .box2{
+    height: 300px;
+    .inner-col{
+      margin-top: 1rem !important;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+}
+@media (max-width: 375px) {
+.home {
+  .buttons {
+    button {
+      margin-left: 0px;
+      margin-top: 2rem;
+     }
+
+  }
+  .recharts-surface {
+    width: 300px !important;
+}
+  .recharts-wrapper {
+    max-height: 300px;
+}
+  .box{
+    .inner-col2{
+      margin-top: 3rem !important;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .box2{
+    height: 300px;
+    .inner-col{
+      margin-top: 1rem !important;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
 }

@@ -1,43 +1,52 @@
 import React from "react";
-import aboutbiliding from '../../assets/images/aboutbiliding.png'
 import dollar from '../../assets/icons/dollar.svg'
+import burn from '../../assets/icons/burn.svg'
+import supply from '../../assets/icons/supply.svg'
+import Akashi from '../../assets/images/Akashi.png'
+import PriceChart from "./components/PriceChart";
 
 export default function Home() {
   return (
     <div className="home">
 
       <div className="container">
-        <div className="row">
-          <div className="col-lg-5 col-md-5 col-sm-5 col-11">
-            <div className="loan-image">
-              <img
-                src={aboutbiliding}
-                alt="loan"
-              />
+      <div className="col-12 .d-none d-md-none .d-sm-block  d-flex justify-content-center justify-content-center">
+  <img src={Akashi} alt="" />
+</div>
+        <div className="row akshihome ">
+          <div className="col-lg-5  col-12">
+            <div className=" App">
+            <h2 className="text-center mt-3">Akashi Price</h2>
+               <PriceChart />
             </div>
-            <div className="box mt-3" >
-            <div className="row ">
-              <div className="col-12 d-flex justify-content-around mt-5">
-              <h6> AKASHI Holders  </h6>
-              <span>1,263</span>
+            <div className="box mt-3 mb-2">
+            <div className="row justify-content-between">
+              <div className="col-lg-12 inner-col2 col-11 d-flex justify-content-around mt-5">
+                <h6>AKASHI Holders</h6>
+                <span>1,263</span>
               </div>
-              <div className="col-12 d-flex justify-content-center buttons mt-2">
-              <button> <img src={dollar} alt="" /> Buy</button>&#160;
-              <button>Burn</button>&#160;
-              <button>Supply</button>
+              <div className="col-12  d-flex justify-content-center buttons mt-2 d-none d-sm-none d-md-block">
+                <button><img src={dollar} alt="" /> Buy</button>&#160;
+                <button><img src={burn} alt="" /> Burn</button>&#160;
+                <button><img src={supply} alt="" /> Supply</button>
               </div>
             </div>
+          </div>
+            <div className="col-12 .d-none d-md-none .d-sm-block  d-flex justify-content-center buttons mt-2">
+              <button><img src={dollar} alt="" /> Buy</button>&#160;
+              <button><img src={burn} alt="" /> Burn</button>&#160;
+              <button><img src={supply} alt="" /> Supply</button>
             </div>
           </div>
           <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div>
-          <div className="col-lg-4  col-md-6 col-sm-6 col-12" >
-            <div className="box" >
+          <div className="col-lg-4   col-11" >
+            <div className="box mt-2" >
             <div className="row ">
-              <div className="col-12 d-flex justify-content-around mt-5">
+              <div className="col-12 inner-col d-flex justify-content-around mt-5">
               <h6> Total Supply  </h6>
               <span>500,000,000,000,000 </span>
               </div>
-              <div className="col-12 d-flex justify-content-around mt-2">
+              <div className="col-12 inner-col d-flex justify-content-around mt-2">
               <h6> Liquid Supply </h6>
               <span>15,000,000,000,000</span>
               </div>
@@ -45,19 +54,19 @@ export default function Home() {
             </div>
             <div className="box2 mt-4" >
             <div className="row ">
-              <div className="col-12 d-flex justify-content-around mt-4">
+              <div className="col-12 inner-col d-flex justify-content-around mt-4">
               <h6> Total Liquidity  </h6>
               <span>$50,000</span>
               </div>
-              <div className="col-12 d-flex justify-content-around mt-2">
+              <div className="col-12 inner-col d-flex justify-content-around mt-2">
               <h6> Treasury Balance </h6>
               <span>5,000,000,000,000</span>
               </div>
-              <div className="col-12 d-flex justify-content-around mt-2">
+              <div className="col-12 inner-col d-flex justify-content-around mt-2">
               <h6> AKASHI Burned </h6>
               <span>2,000,000</span>
               </div>
-              <div className="col-12 d-flex justify-content-around mt-2">
+              <div className="col-12 inner-col d-flex justify-content-around mt-2">
               <h6> Rewards Distributed </h6>
               <span>200,000,000</span>
               </div>
@@ -67,11 +76,11 @@ export default function Home() {
             </div>
             <div className="box mt-4" >
             <div className="row ">
-              <div className="col-12 d-flex justify-content-around mt-5">
+              <div className="col-12 inner-col d-flex justify-content-around mt-5">
               <h6> AKASHIx Minted  </h6>
               <span>0</span>
               </div>
-              <div className="col-12 d-flex justify-content-around mt-2">
+              <div className="col-12 inner-col d-flex justify-content-around mt-2">
               <h6> AKASHIx Staked</h6>
               <span>0</span>
               </div>

@@ -33,14 +33,16 @@ console.log('toggleTheme',toggleTheme);
             <NavLink to="/blog" className="link" activeClassName="link active">Farm</NavLink>
           </Nav>
           <Nav className="ms-auto dir">
-          <NavLink to="/blog" className="link" activeClassName="link active"><img src={materialsymbols} alt="" /> AKASHI: 0</NavLink>
-            <select className="select" defaultValue={selected} onChange={handleChange}>
+          <NavLink to="/blog" className="link" activeClassName="link active"><img src={materialsymbols} alt="" /> <span className='akashismal'>AKASHI: 0</span></NavLink>
+           {/* <div className="nabtns"> */}
+           <select className="select" defaultValue={selected} onChange={handleChange}>
               {languages.map((language, index) => (
                 <option key={index} value={language}>{language}</option>
               ))}
             </select>
             <button ><img src={mdi_walletbifold} alt="" /> Connect</button>
      
+           {/* </div> */}
                 <Form className='m-2'>
                   <Form.Check // prettier-ignore
                     type="switch"

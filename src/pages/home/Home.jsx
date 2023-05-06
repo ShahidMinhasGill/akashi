@@ -10,7 +10,7 @@ export default function Home() {
     <div className="home">
 
       <div className="container">
-      <div className="col-12 .d-none d-md-none .d-sm-block  d-flex justify-content-center justify-content-center">
+      <div className="col-12 small-logo .d-none d-md-none .d-sm-block  d-flex justify-content-center justify-content-center">
   <img src={Akashi} alt="" />
 </div>
         <div className="row akshihome ">

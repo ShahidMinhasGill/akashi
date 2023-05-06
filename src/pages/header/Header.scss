@@ -107,7 +107,7 @@
   .header {
       .navbar {
           // box-shadow: 0 4px 4px -5px grey;
-
+     
           .navbar-nav {
               width: 100%;
               margin: 0;
@@ -116,9 +116,47 @@
               justify-content: space-evenly;
               align-items: center;
               .link {
-                  margin-top: 10px;
+                padding: 6px;
               }
           }
+
+        
+      }
+  }
+}
+@media (max-width: 603px) {
+  .header {
+      .navbar {
+          // box-shadow: 0 4px 4px -5px grey;
+          .navbar-nav {
+            .select {
+                width: 100px;
+                height: 35px;
+                filter: drop-shadow(0px 2px 0px rgba(29, 42, 50, 0.9));
+                font-weight: 300;
+                font-size: 15px;
+                border-radius: 17px;
+            }
+            button {
+                width: 100px;
+                height: 35px;
+                filter: drop-shadow(0px 2px 0px rgba(29, 42, 50, 0.9));
+                font-family: "Hind";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 15px;
+                /* line-height: 26px; */
+                color: #ffffff;
+                border: none;
+                outline: none;
+                border-radius: 17px;
+                background: #CC6832;
+            }
+        }
+          .akashismal{
+            display: none;
+          }
+      
 
           .navbar-nav.dir {
               margin-top: 10px;
