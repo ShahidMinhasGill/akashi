@@ -40,7 +40,7 @@ export default function Home() {
           </div>
           <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div>
           <div className="col-lg-4   col-9" >
-            <div className="box mt-2" >
+            <div className="box mt-5" >
             <div className="row ">
               <div className="col-12 inner-col d-flex justify-content-around mt-5">
               <h6> Total Supply  </h6>
