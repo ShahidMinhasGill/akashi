@@ -38,7 +38,7 @@ console.log('toggleTheme',toggleTheme);
           <Nav className="ms-auto dir">
           <NavLink onClick={() => toggleTheme()}  className="link .d-none d-md-none .d-sm-block" activeClassName="link active "><img src={materialsymbols} alt="" /> <span className='akashismal'>AKASHI: 0</span></NavLink>
           <NavLink onClick={() => toggleTheme()}  className="link d-none d-sm-none d-md-block" activeClassName="link active "><img src={darkmod} alt="" /> <span className='akashismal'>AKASHI: 0</span></NavLink>
-           {/* <div className="nabtns"> */}
+           <div className="nabtns">
            <select className="select" defaultValue={selected} onChange={handleChange}>
               {languages.map((language, index) => (
                 <option key={index} value={language}>{language}</option>
@@ -46,14 +46,14 @@ console.log('toggleTheme',toggleTheme);
             </select>
             <button ><img src={mdi_walletbifold} alt="" /> Connect</button>
      
-           {/* </div> */}
+           </div>
               
           </Nav>
                 
         </Navbar.Collapse>
       </Navbar>
+   <hr />
      
-
     </header>
   );
 }
