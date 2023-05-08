@@ -28,14 +28,14 @@ console.log('toggleTheme',toggleTheme);
         <Navbar.Brand href="/" className="icon smallscreenlogo .d-none d-md-none .d-sm-block"><img src={logo2} alt="logo"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto mr-auto">
+          <Nav className="">
             <NavLink to="/sell" className="link" activeClassName="link active">Dashboard</NavLink>
             <NavLink to="/search" className="link" activeClassName="link active">Cloud</NavLink>
             <NavLink to="/feature" className="link" activeClassName="link active">Burn</NavLink>
             <NavLink to="/experience" className="link" activeClassName="link active">Stake</NavLink>
             <NavLink to="/blog" className="link" activeClassName="link active">Farm</NavLink>
           </Nav>
-          <Nav className="ms-auto dir">
+          <Nav className="ms-auto center-content dir">
           <NavLink onClick={() => toggleTheme()}  className="link .d-none d-md-none .d-sm-block" activeClassName="link active "><img src={materialsymbols} alt="" /> <span className='akashismal'>AKASHI: 0</span></NavLink>
           <NavLink onClick={() => toggleTheme()}  className="link d-none d-sm-none d-md-block" activeClassName="link active "><img src={darkmod} alt="" /> <span className='akashismal'>AKASHI: 0</span></NavLink>
            <div className="nabtns">

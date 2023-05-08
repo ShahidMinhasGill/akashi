@@ -35,7 +35,7 @@ function App() {
           <Route index path="/" element={<Home />} />
         </>
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </ThemeProvider>
   )
 }

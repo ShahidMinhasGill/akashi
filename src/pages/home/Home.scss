@@ -28,7 +28,11 @@
     }
     h6 {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 20px;
+    }
+    span{
+      font-weight: 400;
+font-size: 20px;
     }
     width: 500px;
     height: 160px;
@@ -47,7 +51,15 @@
     }
     .heading {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 20px;
+    }
+    h6 {
+      font-weight: 700;
+      font-size: 20px;
+    }
+    span{
+      font-weight: 400;
+font-size: 20px;
     }
     width: 500px;
     height: 248px;
@@ -186,7 +198,7 @@
           height: 19px;
         }
         .btn-text {
-          font-size: 12px;
+          font-size: 10px;
         }
       }
     }
@@ -239,6 +251,7 @@
         margin-top: 2rem;
         width: 96px;
         height: 40px;
+        font-size: 12px;
         img {
           height: 19px;
         }

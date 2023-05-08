@@ -27,16 +27,16 @@ export default function Home() {
               </div>
               
               <div className="col-12  d-flex justify-content-center buttons mt-2 d-none d-sm-none d-md-block">
-                <button><img src={dollar} alt="" /> Buy</button>&#160;
-                <button><img src={burn} alt="" /> Burn</button>&#160;
-                <button><img src={supply} alt="" /> Supply</button>
+                <button style={{cursor:'default'}}><img src={dollar} alt="" /> Buy</button>&#160;
+                <button style={{cursor:'default'}}><img src={burn} alt="" /> Burn</button>&#160;
+                <button style={{cursor:'default'}}><img src={supply} alt="" /> Supply</button>
               </div>
             </div>
           </div>
             <div className="col-12 .d-none d-md-none .d-sm-block  d-flex justify-content-center buttons mt-4">
-              <button><img src={dollar} alt="" /> <strong className="btn-text">Buy</strong></button>&#160;
-              <button><img src={burn} alt="" /> <strong className="btn-text">Burn</strong> </button>&#160;
-              <button><img src={supply} alt="" /> <strong className="btn-text">Supply</strong> </button>
+              <button style={{cursor:'default'}}><img src={dollar} alt="" /> <strong className="btn-text">Buy</strong></button>&#160;
+              <button style={{cursor:'default'}}><img src={burn} alt="" /> <strong className="btn-text">Burn</strong> </button>&#160;
+              <button style={{cursor:'default'}}><img src={supply} alt="" /> <strong className="btn-text">Supply</strong> </button>
             </div>
           </div>
           <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div>
