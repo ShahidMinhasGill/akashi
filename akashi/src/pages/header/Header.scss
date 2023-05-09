@@ -1,22 +1,30 @@
 .header {
+  margin: 0px;
+    padding: 0px;
+    hr{
+        color: #CC6832;
+        margin: 0px;
+    }
   .navbar {
-      margin: 0;
+    .center-content {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    margin: 0px;
+    padding: 0px;
       height: auto;
-      padding: 25px 5%;
-
       background-size: cover;
       background-repeat: no-repeat;
       background-color: transparent;
 
-      .navbar-brand {
-          padding: 0;
+      .icon {
+          padding: 0px;
           height: auto;
-
           img {
-              width: 133.2px;
-              height: 55px;
-              object-fit: contain;
-          }
+            width: 337px;
+            height: 126px;
+        }
+           
       }
 
       .navbar-nav {
@@ -26,14 +34,13 @@
           .link {
             text-decoration: none;
               padding: 14px;
-              margin-right: 25px;
 
               width: fit-content;
 
               font-family: Poppins, Arial, Helvetica, sans-serif;
               font-style: normal;
-              font-weight: 500;
-              font-size: 16px;
+              font-weight: 300;
+              font-size: 20px;
               line-height: 30px;
 
               &:hover {
@@ -102,11 +109,67 @@
 
 
 
+@media (max-width: 1240px) {
+  .header {
+      .navbar {
+          // box-shadow: 0 4px 4px -5px grey;
+          .icon img {
+            width: 281px;
+            height: 100px;
+        }
+          .navbar-nav {
+              // width: 100%;
+              // margin: 0;
+              // display: flex;
+              // flex-direction: column;
+              // justify-content: space-evenly;
+              // align-items: center;
+              .link {
+                // padding: 6px;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                padding: 10px;
+              }
+              .select {
+                height: 42px;
+                border: 1px solid #CC6832;
+                border-radius: 19px;
+                margin-right: 5px;
+                width: 110px;
+                /* max-width: 470px; */
+                font-size: 17px;
+                cursor: pointer;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 16px;
+                color: #272c37;
+            }
+            button {
+              height: 42px;
+              border: 1px solid #CC6832;
+              border-radius: 19px;
+              width: 110px;
+            }
+            
+            }
+           
+
+        
+      }
+  }
+}
 @media (max-width: 992px) {
   .header {
       .navbar {
           // box-shadow: 0 4px 4px -5px grey;
-
+          .icon img {
+            width: 61.2px !important;
+            height: 55px;
+            object-fit: contain;
+        
+       }
           .navbar-nav {
               width: 100%;
               margin: 0;
@@ -115,13 +178,119 @@
               justify-content: space-evenly;
               align-items: center;
               .link {
-                  margin-top: 10px;
+                padding: 6px;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
               }
+            
+            }
+            .navbar-nav.dir {
+              margin-top: 10px;
+              padding-right: 90px;
           }
+
+        
+      }
+  }
+}
+@media (max-width: 603px) {
+  .header {
+      .navbar {
+          // box-shadow: 0 4px 4px -5px grey;
+          .icon img {
+            width: 61.2px !important;
+            height: 55px;
+            object-fit: contain;
+        
+       }
+          .navbar-nav {
+            
+            .select {
+                // width: 100px;
+                height: 35px;
+                filter: drop-shadow(0px 2px 0px rgba(29, 42, 50, 0.9));
+                font-weight: 300;
+                font-size: 10px;
+                border-radius: 17px;
+            }
+            button {
+                // width: 100px;
+                height: 35px;
+                filter: drop-shadow(0px 2px 0px rgba(29, 42, 50, 0.9));
+                font-style: normal;
+                font-weight: 300;
+                font-size: 10px;
+                /* line-height: 26px; */
+                color: #ffffff;
+                border: none;
+                outline: none;
+                border-radius: 17px;
+                background: #CC6832;
+            }
+        }
+          .akashismal{
+            display: none;
+          }
+      
 
           .navbar-nav.dir {
               margin-top: 10px;
+              padding-right: 56px;
           }
       }
   }
 }
+@media (max-width: 430px) {
+  .header {
+      .navbar {
+          // box-shadow: 0 4px 4px -5px grey;
+          .icon img {
+            width: 61.2px !important;
+            height: 55px;
+            object-fit: contain;
+        
+       }
+          .navbar-nav {
+            
+            .select {
+                width: 100px;
+                height: 35px;
+                filter: drop-shadow(0px 2px 0px rgba(29, 42, 50, 0.9));
+                font-weight: 300;
+                font-size: 10px;
+                border-radius: 17px;
+            }
+            button {
+                width: 100px;
+                height: 35px;
+                filter: drop-shadow(0px 2px 0px rgba(29, 42, 50, 0.9));
+                font-style: normal;
+                font-weight: 300;
+                font-size: 10px;
+                /* line-height: 26px; */
+                color: #ffffff;
+                border: none;
+                outline: none;
+                border-radius: 17px;
+                background: #CC6832;
+            }
+        }
+          .akashismal{
+            display: none;
+          }
+      
+
+          .navbar-nav.dir {
+              margin-top: 10px;
+              padding-right: 40px;
+          }
+      }
+  }
+}
+@media (max-width: 350px){
+  .header .navbar .navbar-nav.dir {
+    padding-right: 0px;
+}
+}
+

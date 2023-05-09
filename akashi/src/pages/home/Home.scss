@@ -1,27 +1,76 @@
-
-.home{
+.home {
   overflow: hidden;
-  .box{
-    // display: flex;
-    // justify-content: space-around;
-    // align-items: center;
+  margin-top: 5rem;
+  .akshihome {
+    .App {
+      margin-top: 77px;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+
+  .box {
+    .inner-col {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 50px 0px 45px;
+    }
+    .inner-col2 {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 53px 11px 42px;
+    }
+    .heading {
+      font-weight: 700;
+      font-size: 16px;
+    }
+    h6 {
+      font-weight: 700;
+      font-size: 20px;
+    }
+    span{
+      font-weight: 400;
+font-size: 20px;
+    }
     width: 500px;
     height: 160px;
+    margin-top: 5rem;
     // background: rgba(249, 232, 208, 0.5);
-    box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25),
+      0px -4px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25),
+      0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 23px;
   }
-  .box2{
-    // display: flex;
-    // justify-content: space-around;
-    // align-items: center;
+  .box2 {
+    .inner-col{
+      display: flex;
+    justify-content: space-between;
+    padding: 16px 50px 0px 45px;
+    }
+    .heading {
+      font-weight: 700;
+      font-size: 20px;
+    }
+    h6 {
+      font-weight: 700;
+      font-size: 20px;
+    }
+    span{
+      font-weight: 400;
+font-size: 20px;
+    }
     width: 500px;
-    height: 200px;
+    height: 248px;
     // background: rgba(249, 232, 208, 0.5);
-    box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25),
+      0px -4px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25),
+      0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 23px;
   }
-  .buttons{
+
+  .buttons {
     button {
       width: 130px;
       margin-left: 20px;
@@ -36,45 +85,44 @@
       border: none;
       outline: none;
       border-radius: 23px;
-      background: #CC6832;
+      background: #cc6832;
 
       &:hover {
-          box-shadow: 0 1px 3px 0 rgba(15, 15, 15, 0.76);
+        box-shadow: 0 1px 3px 0 rgba(15, 15, 15, 0.76);
       }
-  }
+    }
   }
   .chart-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    .linechart{
-       height:400;
-       width: 600px;
+    .linechart {
+      height: 400;
+      width: 600px;
     }
   }
-  
+
   .recharts-wrapper {
     margin: 0 auto;
     width: 400 !important;
     height: 600 !important;
   }
   .recharts-surface {
-    height:400 !important;
-    width: 600px !important;
+    height: 400 !important;
+    width: 500px !important;
     border-radius: 5px;
   }
-  
-  
+
   .recharts-cartesian-axis-tick-value {
     font-size: 14px;
     font-weight: bold;
   }
-  
+
   .recharts-cartesian-axis-tick-line {
     display: none;
   }
-  
+
   .recharts-tooltip-wrapper {
     border-radius: 5px;
     background-color: #ffffff;
@@ -84,11 +132,11 @@
     font-size: 14px;
     font-weight: bold;
   }
-  
+
   .recharts-default-legend {
     margin-top: 10px;
   }
-  
+
   .recharts-legend-item-text {
     font-size: 14px;
     font-weight: bold;
@@ -101,77 +149,175 @@
 @media (max-width: 1024px) {
   .home {
     overflow: hidden;
-    .akshihome{
+    .akshihome {
       display: flex;
       flex-direction: column;
       align-items: center;
       flex-direction: column-reverse;
-  
     }
     .box {
       width: 100%;
-  }
+    }
     .box2 {
       width: 100%;
+    }
   }
-  
-}
 }
 @media (max-width: 612px) {
-.home {
-  .recharts-wrapper {
-    max-height: 280px;
-}
-  .recharts-surface {
-    width: 346px !important;
-    height: 271px;
-}
-  .box{
-    .inner-col{
-      margin-top: 1rem !important;
-      flex-direction: column;
-      align-items: center;
+  .home {
+    h6 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 32px;
+      text-align: center;
+    }
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      text-align: center;
+    }
+    .recharts-wrapper {
+      max-height: 280px;
+    }
+    .small-logo {
+      height: 40px;
+    }
+    .recharts-surface {
+      width: 346px !important;
+      height: 271px;
+    }
+    .buttons {
+      button {
+        margin-left: 0px;
+        margin-top: 2rem;
+        width: 96px;
+        height: 40px;
+        img {
+          height: 19px;
+        }
+        .btn-text {
+          font-size: 10px;
+        }
+      }
+    }
+    .box {
+      height: 200px;
+      margin-top: 2rem !important;
+
+      .inner-col {
+        margin-top: 1rem !important;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+      }
+      .inner-col2 {
+        margin-top: 4rem !important;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+      }
+    }
+    .box2 {
+      height: 380px;
+      .inner-col {
+        margin-top: 1rem !important;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+      }
     }
   }
-  .box2{
-    height: 300px;
-    .inner-col{
-      margin-top: 1rem !important;
-      flex-direction: column;
-      align-items: center;
+}
+@media (max-width: 425px) {
+  .home {
+    h6 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 32px;
+      text-align: center;
+    }
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      text-align: center;
+    }
+    .buttons {
+      button {
+        margin-left: 0px;
+        margin-top: 2rem;
+        width: 96px;
+        height: 40px;
+        font-size: 12px;
+        img {
+          height: 19px;
+        }
+        .btn-text {
+          font-size: 10px;
+        }
+      }
+    }
+    //   .recharts-surface {
+    //     width: 300px !important;
+    // }
+    .recharts-wrapper {
+      max-height: 300px;
+    }
+    .box {
+      height: 200px;
+      .inner-col2 {
+        margin-top: 3rem !important;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .box2 {
+      height: 380px;
+      .inner-col {
+        margin-top: 1rem !important;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
-}
 }
 @media (max-width: 375px) {
-.home {
-  .buttons {
-    button {
-      margin-left: 0px;
-      margin-top: 2rem;
-     }
-
-  }
-  .recharts-surface {
-    width: 300px !important;
-}
-  .recharts-wrapper {
-    max-height: 300px;
-}
-  .box{
-    .inner-col2{
-      margin-top: 3rem !important;
-      flex-direction: column;
-      align-items: center;
+  .home {
+    .buttons {
+      button {
+        margin-left: 0px;
+        margin-top: 2rem;
+        img {
+          height: 19px;
+        }
+        .btn-text {
+          font-size: 10px;
+        }
+      }
+    }
+    .recharts-surface {
+      width: 300px !important;
+    }
+    .recharts-wrapper {
+      max-height: 300px;
+    }
+    .box {
+      .inner-col2 {
+        margin-top: 3rem !important;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .box2 {
+      height: 380px;
+      .inner-col {
+        margin-top: 1rem !important;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
-  .box2{
-    height: 300px;
-    .inner-col{
-      margin-top: 1rem !important;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-}
 }

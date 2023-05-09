@@ -14,12 +14,13 @@ export default function Home() {
         <img src={Akashi} alt="" />
       </div>
         <div className="row akshihome ">
+        <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div>
           <div className="col-lg-5   col-9">
             <div className=" App">
             <h2 className="text-center mt-3">Akashi Price</h2>
                <PriceChart />
             </div>
-            <div className="box mt-3 mb-2">
+            <div className="box mt-5 mb-2">
             <div className="row justify-content-between">
               <div className="col-lg-12 inner-col2 col-11  mt-5">
                 <h6>AKASHI Holders</h6>
@@ -29,18 +30,18 @@ export default function Home() {
               <div className="col-12  d-flex justify-content-center buttons mt-2 d-none d-sm-none d-md-block">
                 <button style={{cursor:'default'}}><img src={dollar} alt="" /> Buy</button>&#160;
                 <button style={{cursor:'default'}}><img src={burn} alt="" /> Burn</button>&#160;
-                <button style={{cursor:'default'}}><img src={supply} alt="" /> Supply</button>
+                <button style={{cursor:'default'}}><img  src={supply} alt=""  className="img2"/> Supply</button>
               </div>
             </div>
           </div>
-            <div className="col-12 .d-none d-md-none .d-sm-block  d-flex justify-content-center buttons mt-4">
+            <div className="col-12 mb-2 .d-none d-md-none .d-sm-block  d-flex justify-content-center buttons mt-4">
               <button style={{cursor:'default'}}><img src={dollar} alt="" /> <strong className="btn-text">Buy</strong></button>&#160;
               <button style={{cursor:'default'}}><img src={burn} alt="" /> <strong className="btn-text">Burn</strong> </button>&#160;
-              <button style={{cursor:'default'}}><img src={supply} alt="" /> <strong className="btn-text">Supply</strong> </button>
+              <button style={{cursor:'default'}}><img src={supply} alt="" className="img2" /> <strong className="btn-text">Supply</strong> </button>
             </div>
           </div>
-          <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div>
-          <div className="col-lg-4   col-9" >
+          {/* <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div> */}
+          <div className="col-lg-5   col-9" >
             <div className="box " >
             <div className="row ">
               {/* <div className="col-6 p-5">
@@ -97,7 +98,7 @@ export default function Home() {
             
             </div>
             </div>
-            <div className="box mt-4" >
+            <div className="box mb-2 mt-4" >
             <div className="row ">
             {/* <div className="col-6 p-5">
               <p className="heading"> AKASHIx Minted  </p>
@@ -109,7 +110,7 @@ export default function Home() {
               <p 
               > 0 </p>
               </div> */}
-              <div className=" inner-col  mt-4">
+              <div className=" inner-col   mt-4">
               <h6> AKASHIx Minted  </h6>
               <span>0</span>
               </div>
@@ -125,7 +126,7 @@ export default function Home() {
 
    
           </div>
-          <div className="col-lg-2 col-md-1 col-sm-1 col-1"></div>
+          {/* <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div> */}
         </div>
       </div>
 

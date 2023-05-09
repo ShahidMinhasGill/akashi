@@ -3,7 +3,7 @@
   margin-top: 5rem;
   .akshihome {
     .App {
-      margin-top: 77px;
+      margin-top: 76px;
     }
     h2 {
       font-weight: 700;
@@ -30,9 +30,9 @@
       font-weight: 700;
       font-size: 20px;
     }
-    span{
+    span {
       font-weight: 400;
-font-size: 20px;
+      font-size: 20px;
     }
     width: 500px;
     height: 160px;
@@ -44,10 +44,12 @@ font-size: 20px;
     border-radius: 23px;
   }
   .box2 {
-    .inner-col{
+    width: 500px;
+    height: 280px;
+    .inner-col {
       display: flex;
-    justify-content: space-between;
-    padding: 16px 50px 0px 45px;
+      justify-content: space-between;
+      padding: 16px 50px 0px 45px;
     }
     .heading {
       font-weight: 700;
@@ -57,12 +59,11 @@ font-size: 20px;
       font-weight: 700;
       font-size: 20px;
     }
-    span{
+    span {
       font-weight: 400;
-font-size: 20px;
+      font-size: 20px;
     }
-    width: 500px;
-    height: 248px;
+   
     // background: rgba(249, 232, 208, 0.5);
     box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25),
       0px -4px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25),
@@ -72,14 +73,13 @@ font-size: 20px;
 
   .buttons {
     button {
-      width: 130px;
+      width: 125px;
+      height: 40px;
       margin-left: 20px;
-      height: 42px;
       filter: drop-shadow(0px 2px 0px rgba(29, 42, 50, 0.9));
       font-style: normal;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 26px;
+      font-weight: 600;
+       font-size: 20px;
       color: #ffffff;
 
       border: none;
@@ -89,6 +89,14 @@ font-size: 20px;
 
       &:hover {
         box-shadow: 0 1px 3px 0 rgba(15, 15, 15, 0.76);
+      }
+      img{
+       height: 26px;
+       width: 26px; 
+      }
+      .img2{
+        height: 20px;
+        width: 21px;
       }
     }
   }
@@ -149,6 +157,22 @@ font-size: 20px;
 @media (max-width: 1024px) {
   .home {
     overflow: hidden;
+    .buttons {
+      button {
+        margin-left: 0px;
+        margin-top: 2rem;
+        width: 120px;
+        height: 40px;
+        img {
+          height: 26px;
+        }
+        .btn-text {
+          font-weight: 600;
+          font-size: 18px;
+          
+        }
+      }
+    }
     .akshihome {
       display: flex;
       flex-direction: column;
@@ -195,10 +219,12 @@ font-size: 20px;
         width: 96px;
         height: 40px;
         img {
-          height: 19px;
+          height: 26px;
         }
         .btn-text {
-          font-size: 10px;
+          font-weight: 600;
+          font-size: 18px;
+          
         }
       }
     }

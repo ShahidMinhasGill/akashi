@@ -1,12 +1,7 @@
 import React from 'react';
 import {  Container } from 'react-bootstrap';
-import mditwitter from '../../assets/icons/mdi_twitter.svg';
-import telegram from '../../assets/icons/telegram.svg';
-import discord from '../../assets/icons/discord.svg';
-import reddit from '../../assets/icons/reddit.svg';
-import github from '../../assets/icons/github.svg';
-import paper from '../../assets/icons/paper.svg';
-const Footer = (props) => {
+
+const Footer = ({twitter,telegramIcon,discordIcon,redditIcon,githubIcon,paperIcon}) => {
   return (
     <footer className="footer">
  
@@ -16,22 +11,22 @@ const Footer = (props) => {
     <ul className="list mt-4">
       <li>
         <a href="/">
-          <div><img src={mditwitter} alt="Twitter" width="25px" height="25px" /></div>
+          <div><img src={twitter} alt="Twitter" width="25px" height="25px" /></div>
         </a>
         <a href="/">
-          <div><img src={telegram} alt="telegram" width="25px" height="25px" /></div>
+          <div><img src={telegramIcon} alt="telegram" width="25px" height="25px" /></div>
         </a>
         <a href="/">
-          <div><img src={discord} alt="discord" width="25px" height="25px" /></div>
+          <div><img src={discordIcon} alt="discord" width="25px" height="25px" /></div>
         </a>
         <a href="/">
-          <div><img src={reddit} alt="reddit" width="25px" height="25px" /></div>
+          <div><img src={redditIcon} alt="reddit" width="25px" height="25px" /></div>
         </a>
         <a href="/">
-          <div><img src={github} alt="github" width="25px" height="25px" /></div>
+          <div><img src={githubIcon} alt="github" width="25px" height="25px" /></div>
         </a>
         <a href="/">
-          <div><img src={paper} alt="paper" width="25px" height="25px" /></div>
+          <div><img src={paperIcon} alt="paper" width="25px" height="25px" /></div>
         </a>
       </li>
     </ul>
