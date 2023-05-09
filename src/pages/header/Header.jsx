@@ -10,7 +10,7 @@ import { GlobalStyles } from '../../config/GlobalStyles';
 
 
 
-const Header = ( {toggleTheme}) => {
+const Header = ( {toggleTheme,arrowIcon,DarkLiteMode}) => {
 console.log('toggleTheme',toggleTheme);
   const [selected, setSelected] = useState("Ethereum");
   const languages = ["Ethereum", "Bitcoin", "Litecoin", "Dogecoin"];
@@ -36,13 +36,15 @@ console.log('toggleTheme',toggleTheme);
             <NavLink to="/blog" className="link" activeClassName="link active">Farm</NavLink>
           </Nav>
           <Nav className="ms-auto center-content dir">
-          <NavLink onClick={() => toggleTheme()}  className="link .d-none d-md-none .d-sm-block" activeClassName="link active "><img src={materialsymbols} alt="" /> <span className='akashismal'>AKASHI: 0</span></NavLink>
-          <NavLink onClick={() => toggleTheme()}  className="link d-none d-sm-none d-md-block" activeClassName="link active "><img src={darkmod} alt="" /> <span className='akashismal'>AKASHI: 0</span></NavLink>
+          <NavLink onClick={() => toggleTheme()}  className="link .d-none d-md-none .d-sm-block" activeClassName="link active "><img src={DarkLiteMode} alt="" /> <span className='akashismal'>AKASHI: 0</span></NavLink>
+          <NavLink onClick={() => toggleTheme()}  className="link d-none d-sm-none d-md-block" activeClassName="link active "><img src={DarkLiteMode} alt="" /> <span className='akashismal'>AKASHI: 0</span></NavLink>
            <div className="nabtns">
-           <select className="select" defaultValue={selected} onChange={handleChange}>
+           {/* <img src={arrowIcon} alt="" /> */}
+              <select className="select"  defaultValue={selected} onChange={handleChange}>
               {languages.map((language, index) => (
                 <option key={index} value={language}>{language}</option>
               ))}
+
             </select>
             <button ><img src={mdi_walletbifold} alt="" /> Connect</button>
      

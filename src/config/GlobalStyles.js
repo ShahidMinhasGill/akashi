@@ -4,9 +4,10 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-color: ${(theme) => theme.theme.body};
     color: ${(theme) => theme.theme.text};
-    select{
+    select {
       background-color: ${(theme) => theme.theme.body};
-      color: ${({ theme }) => theme.text};
+      color: ${(theme) => theme.theme.text};
+      background-image: ${(theme) => theme.theme.backgroundImage};
     }
     p{
       color: ${({ theme }) => theme.text};

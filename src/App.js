@@ -19,16 +19,21 @@ import github from './assets/icons/github.svg';
 import githubblack from './assets/icons/githubblack.svg';
 import paper from './assets/icons/paper.svg';
 import paperblack from './assets/icons/paperblack.svg';
+import arrow from './assets/icons/arrow.svg';
+import litemode from './assets/icons/material-symbols_settings-night-sight.svg';
+import darkmod from './assets/icons/darkmod.svg';
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
   const [theme, setTheme] = useState('dark')
+  const [DarkLiteMode, setDarkLiteMode] = useState(darkmod);
   const [twitter, setMditwitter] = useState(mditwitterlite);
   const [telegramIcon, setTelegramIcon] = useState(telegramlite);
   const [discordIcon, setDiscordIcon] = useState(discord);
   const [redditIcon, setRedditIcon] = useState(reddit);
   const [githubIcon, setGithubIcon] = useState(github);
   const [paperIcon, setPaperIcon] = useState(paper);
+  const [arrowIcon, setArrowIcon] = useState(arrow);
 
   
   const toggleTheme = () => {
@@ -39,6 +44,8 @@ function App() {
       setRedditIcon(redditblack);
       setGithubIcon(githubblack);
       setPaperIcon(paperblack);
+      setArrowIcon(arrow)
+      setDarkLiteMode(litemode)
       setTheme("light");
     } else {
       setMditwitter(mditwitterlite)
@@ -47,7 +54,8 @@ function App() {
       setRedditIcon(reddit)
       setGithubIcon(github)
       setPaperIcon(paper)
-
+      setArrowIcon(arrow)
+      setDarkLiteMode(darkmod)
       setTheme("dark");
 
     }
@@ -57,7 +65,7 @@ function App() {
   return (
     <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
       <GlobalStyles />
-      <Header theme={theme} toggleTheme={toggleTheme} />
+      <Header theme={theme} DarkLiteMode={DarkLiteMode} arrowIcon={arrowIcon} toggleTheme={toggleTheme} />
       <Routes>
         <>
           <Route index path="/" element={<Home />} />
