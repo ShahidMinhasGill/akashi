@@ -7,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
     select {
       background-color: ${(theme) => theme.theme.body};
       color: ${(theme) => theme.theme.text};
-      background-image: ${(theme) => theme.theme.backgroundImage};
+      background-image: ${(theme) => theme.theme.selectArrowImage};
     }
     p{
       color: ${({ theme }) => theme.text};

@@ -40,7 +40,9 @@ console.log('toggleTheme',toggleTheme);
           <NavLink onClick={() => toggleTheme()}  className="link d-none d-sm-none d-md-block" activeClassName="link active "><img src={DarkLiteMode} alt="" /> <span className='akashismal'>AKASHI: 0</span></NavLink>
            <div className="nabtns">
            {/* <img src={arrowIcon} alt="" /> */}
-              <select className="select"  defaultValue={selected} onChange={handleChange}>
+              <select className="select" 
+              style={{ backgroundImage: `url(${arrowIcon})`, backgroundRepeat: 'no-repeat'}}
+              defaultValue={selected} onChange={handleChange}>
               {languages.map((language, index) => (
                 <option key={index} value={language}>{language}</option>
               ))}

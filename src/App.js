@@ -20,6 +20,7 @@ import githubblack from './assets/icons/githubblack.svg';
 import paper from './assets/icons/paper.svg';
 import paperblack from './assets/icons/paperblack.svg';
 import arrow from './assets/icons/arrow.svg';
+import arrowblack from './assets/icons/arrowblack.svg';
 import litemode from './assets/icons/material-symbols_settings-night-sight.svg';
 import darkmod from './assets/icons/darkmod.svg';
 import { Route, Routes } from 'react-router-dom'
@@ -33,7 +34,7 @@ function App() {
   const [redditIcon, setRedditIcon] = useState(reddit);
   const [githubIcon, setGithubIcon] = useState(github);
   const [paperIcon, setPaperIcon] = useState(paper);
-  const [arrowIcon, setArrowIcon] = useState(arrow);
+  const [arrowIcon, setArrowIcon] = useState(arrowblack);
 
   
   const toggleTheme = () => {
@@ -54,7 +55,7 @@ function App() {
       setRedditIcon(reddit)
       setGithubIcon(github)
       setPaperIcon(paper)
-      setArrowIcon(arrow)
+      setArrowIcon(arrowblack)
       setDarkLiteMode(darkmod)
       setTheme("dark");
 
