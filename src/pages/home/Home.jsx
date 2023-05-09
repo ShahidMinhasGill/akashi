@@ -22,7 +22,7 @@ export default function Home() {
             </div>
             <div className="box mt-5 mb-2">
             <div className="row justify-content-between">
-              <div className="col-lg-12 inner-col2 col-11  mt-5">
+              <div className="col-lg-12 inner-col2   mt-5">
                 <h6>AKASHI Holders</h6>
                 <span>1,263</span>
               </div>
