@@ -28,8 +28,8 @@ export default function Home() {
               </div>
               
               <div className="col-12  d-flex justify-content-center buttons mt-2 d-none d-sm-none d-md-block">
-                <button style={{cursor:'default'}}><img src={dollar} alt="" /> Buy</button>&#160;
-                <button style={{cursor:'default'}}><img src={burn} alt="" /> Burn</button>&#160;
+                <button style={{cursor:'default'}}><img src={dollar} alt="" />Buy</button>&#160;
+                <button style={{cursor:'default'}}><img src={burn} alt="" />Burn</button>&#160;
                 <button style={{cursor:'default'}}><img  src={supply} alt=""  className="img2"/> Supply</button>
               </div>
             </div>
@@ -37,7 +37,7 @@ export default function Home() {
             <div className="col-12 mb-2 .d-none d-md-none .d-sm-block  d-flex justify-content-center buttons mt-4">
               <button style={{cursor:'default'}}><img src={dollar} alt="" /> <strong className="btn-text">Buy</strong></button>&#160;
               <button style={{cursor:'default'}}><img src={burn} alt="" /> <strong className="btn-text">Burn</strong> </button>&#160;
-              <button style={{cursor:'default'}}><img src={supply} alt="" className="img2" /> <strong className="btn-text">Supply</strong> </button>
+              <button style={{cursor:'default'}}><img src={supply} alt="" className="img2" /> <strong className="btn-text">&#160; Supply</strong> </button>
             </div>
           </div>
           <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div>

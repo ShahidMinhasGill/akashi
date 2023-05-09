@@ -213,7 +213,11 @@
       height: 271px;
     }
     .buttons {
+      
       button {
+        display: flex;
+    align-items: center;
+    justify-content: center;
         margin-left: 0px;
         margin-top: 2rem;
         width: 100px;
