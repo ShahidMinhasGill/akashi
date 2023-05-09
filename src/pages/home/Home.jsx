@@ -14,7 +14,7 @@ export default function Home() {
         <img src={Akashi} alt="" />
       </div>
         <div className="row akshihome ">
-        <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div>
+          
           <div className="col-lg-5   col-9">
             <div className=" App">
             <h2 className="text-center mt-3">Akashi Price</h2>
@@ -40,8 +40,8 @@ export default function Home() {
               <button style={{cursor:'default'}}><img src={supply} alt="" className="img2" /> <strong className="btn-text">Supply</strong> </button>
             </div>
           </div>
-          {/* <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div> */}
-          <div className="col-lg-5   col-9" >
+          <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div>
+          <div className="col-lg-4   col-9" >
             <div className="box " >
             <div className="row ">
               {/* <div className="col-6 p-5">
@@ -126,7 +126,7 @@ export default function Home() {
 
    
           </div>
-          {/* <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div> */}
+          <div className="col-lg-1 col-md-1 col-sm-1 col-1"></div>
         </div>
       </div>
 
